@@ -59,7 +59,7 @@ const Home = () => {
           }}
           className="text-3xl font-extrabold"
         >
-          Fullstack Developer
+          Web Developer - Intern level
         </h2>
         <div className="flex flex-wrap justify-center gap-6 mt-6">
           {techIcons.map(({ Icon, name }, i) => (
@@ -72,14 +72,14 @@ const Home = () => {
             </div>
           ))}
         </div>
+        <CiDesktopMouse2
+          className={`w-12 h-12 absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-pulse text-gray-600 transition-opacity duration-700 ${
+            showMouse ? "opacity-100" : "opacity-0"
+          }`}
+        />
       </div>
 
       {/* Mouse icon with smooth fade-in/out */}
-      <CiDesktopMouse2
-        className={`w-12 h-12 absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-pulse text-gray-600 transition-opacity duration-700 ${
-          showMouse ? "opacity-100" : "opacity-0"
-        }`}
-      />
     </section>
   );
 };
