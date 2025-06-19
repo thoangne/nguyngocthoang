@@ -43,6 +43,9 @@ function App() {
       <About />
       <Project />
       <Contact />
+      <footer className="text-center py-4 text-sm text-gray-500">
+        &copy; {new Date().getFullYear()} Thoang. All rights reserved.
+      </footer>
     </div>
   );
 }

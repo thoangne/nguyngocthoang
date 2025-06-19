@@ -18,12 +18,15 @@ const ParallaxScreen = () => {
 
   return (
     <div
-      className="parallax-wrapper"
+      className="parallax-wrapper w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px] mx-auto transition-transform duration-500"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="parallax-screen" ref={screenRef}>
-        <div className="screen-content">
+      <div
+        className="parallax-screen rounded-xl overflow-hidden shadow-2xl transition-transform duration-500"
+        ref={screenRef}
+      >
+        <div className="screen-content w-full h-auto object-cover block">
           <img src="./1.png" alt="" className="screen-img" />
         </div>
       </div>

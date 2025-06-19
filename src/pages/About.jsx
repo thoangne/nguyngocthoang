@@ -13,7 +13,7 @@ const About = () => {
           <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
             Hi there 👋
           </h1>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-wrap  ">
             I’m Thoang — a third-year Information Technology student at UIT,
             currently living in Ho Chi Minh City. I’m passionate about
             full-stack development, with a strong focus on UI/UX design and API
