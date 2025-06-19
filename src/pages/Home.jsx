@@ -14,16 +14,7 @@ import {
 import { CiDesktopMouse2 } from "react-icons/ci";
 
 const Home = () => {
-  const [showMouse, setShowMouse] = useState(true);
   //TODO: SET DARK MODE
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowMouse(window.scrollY < 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const techIcons = [
     { Icon: SiReact, name: "React" },
@@ -72,11 +63,6 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <CiDesktopMouse2
-          className={`w-12 h-12 absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-pulse text-gray-600 transition-opacity duration-700 ${
-            showMouse ? "opacity-100" : "opacity-0"
-          }`}
-        />
       </div>
 
       {/* Mouse icon with smooth fade-in/out */}
