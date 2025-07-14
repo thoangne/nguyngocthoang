@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   SiReact,
   SiNodedotjs,
@@ -29,9 +29,9 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="text-foreground min-h-screen px-6 sm:px-10 md:px-20 flex items-center justify-center relative"
+      className="text-foreground px-6 sm:px-10 md:px-20 flex items-center justify-center relative h-screen    "
     >
-      <div className="text-center space-y-6 max-w-4xl w-full">
+      <div className="text-center space-y-6 max-w-4xl w-full max-[600px]:mb-[15rem]">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 animate-floating tracking-wider hover:animate-flip transition-transform">
           N G U Y N G O C T H O A N G
         </h1>
